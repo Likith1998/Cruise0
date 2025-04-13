@@ -1,0 +1,119 @@
+.profile-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 1.5rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.login-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.profile-header h2 {
+  margin: 0.5rem 0;
+  color: #333;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  font-size: 1.5rem;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* .profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+.profile-details {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.profile-details p {
+  margin: 0.75rem 0;
+  color: #333;
+}
+
+.profile-details strong {
+  color: #555;
+  margin-right: 0.5rem;
+}
+
+.logout-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.logout-button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: #f8f9fa;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.verified-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: #e6f4ea;
+  color: #1e7e34;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.unverified-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: #fff3e0;
+  color: #e65100;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.verify-link {
+  color: #007bff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.verify-link:hover {
+  color: #0056b3;
+}

@@ -2,10 +2,10 @@ import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import './Profile.css';
 
-const Profile = () => {
+const Profile = ({ emailVerified }: { emailVerified: boolean }) => {
   const { user, logout, isAuthenticated } = useAuth0();
 
-  console.log(user);
+  // console.log(user);
   
   // If not authenticated, show a message
   if (!isAuthenticated) {
@@ -43,7 +43,7 @@ const Profile = () => {
           <p><strong>Email:</strong> {user?.email}</p>
           <p>
             <strong>Email Verified:</strong> 
-            {user?.email_verified ? (
+            {emailVerified ? (
               <span className="verified-badge">✓ Yes</span>
             ) : (
               <span className="unverified-badge">
@@ -68,4 +68,4 @@ const Profile = () => {
   );
 };
 
-export default Profile; 
+export default Profile;
